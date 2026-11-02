@@ -1,0 +1,43 @@
+# ---- OS / editor --------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---- Obsidian: keep config, drop per-device UI state --------------------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ---- Agent local state --------------------------------------------------
+.claude/settings.local.json
+.grok/
+.codex/
+
+# ---- Secrets: never commit ----------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+credentials/
+secrets/
+
+# ---- Financial hard numbers (root Rule 16, see Resources/ops/vault-sync.md)
+# Explicit folders: put anything with real figures here.
+Resources/finance/
+Projects/*/agreements/
+Projects/*/pricing/
+Personal/budget*.md
+
+# Pattern net: catches stray files anywhere in the vault.
+**/statements/
+*[Ii]nvoice*.pdf
+*[Rr]eceipt*.pdf
+*[Ss]tatement*.pdf
+*[Ss]tatement*.csv
+*[Tt]ransactions*.csv
+*[Bb]ank*.csv
+*[Pp]ayroll*
+*[Tt]ax[-_ ][Rr]eturn*
+
+# Add your own below (run `git check-ignore -v <path>` to confirm coverage)

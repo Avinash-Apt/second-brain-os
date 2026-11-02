@@ -1,0 +1,13 @@
+# Files and folders agents should NOT read. Applies to every agent (root Rule 8).
+
+# Credentials and secrets
+.env
+.env.*
+*.key
+*.pem
+credentials/
+secrets/
+
+# Add private paths below, e.g.
+# Personal/journal/
+# Resources/finance/raw/
