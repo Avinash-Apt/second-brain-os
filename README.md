@@ -82,4 +82,4 @@ Run them through your agent's own scheduler (Grokbot, Claude routines, Codex aut
 - Routing: add a row to the Knowledge Routing table and a folder `AGENTS.md`.
 - Jobs: edit the prompts in `Resources/vault-operator/`. Add a new job by adding a prompt there and a line in `install-schedules.sh`.
 
-Inspired by the BenAI Obsidian OS plugin.
+Folder structure adapted from BenAI Obsidian OS.
